@@ -1,0 +1,643 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MyCATALOGOS
+</name>
+</assembly>
+<members>
+<member name="P:MyCATALOGOS.frmaddArreglo.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddArreglo.cdpantalla">
+	<summary>
+ PROPIEDAD: Clave de la pantalla
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddArreglo.cdreporte">
+	<summary>
+ PROPIEDAD: Clave del reporte
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmNavegacion.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmNavegacion.cdesde">
+	<summary>
+ PROPIEDAD: Clave de la pantalla desde
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmNavegacion.cdhasta">
+	<summary>
+ PROPIEDAD: Clave de la pantalla hasta
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmNavegacion.InputTags">
+	<summary>
+ PROPIEDAD: Tag de inputs
+ </summary>
+	<value></value>
+	<returns>Collection</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporteArreglo.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporteArreglo.cdreporte">
+	<summary>
+ PROPIEDAD: Clave del reporte
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporteArreglo.cdarreglo">
+	<summary>
+ PROPIEDAD: Clave del arreglo
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddpantalla.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPersona.cdpersona">
+	<summary>
+ PROPIEDAD: Clave de la persona
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPersona.SoloLectura">
+	<summary>
+ PROPIEDAD: Bandera de solo lectura
+ </summary>
+	<value>Boolean</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmPersona.Valida_Informacion">
+	<summary>
+ Función para validar la información capturada en el sistema
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmFuenteDatos.cdftedatos">
+	<summary>
+ PROPIEDAD: Clave de la fuente de datos
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmFuenteDatos.SoloLectura">
+	<summary>
+ PROPIEDAD: bandera de solo lectura
+ </summary>
+	<value>Boolean</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmFuenteDatos.Consultar_FuenteDeDatos">
+	<summary>
+ Procedimiento para consulta toda la información de un proyecto
+ </summary>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmFrontSyncValor.Clases">
+	<summary>
+ PROPIEDAD: Colección de clases
+ </summary>
+	<value></value>
+	<returns>Collection</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmFrontSyncValor.Objetos">
+	<summary>
+ PROPIEDAD: Colección de objetos
+ </summary>
+	<value></value>
+	<returns>Collection</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmFrontSyncValor.Variables">
+	<summary>
+ PROPIEDAD: Colección de variables
+ </summary>
+	<value></value>
+	<returns>Collection</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmFrontSyncValor.HtmlInputs">
+	<summary>
+ PROPIEDAD: Colección de inputs de html
+ </summary>
+	<value></value>
+	<returns>Collection</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmFrontSyncValor.result">
+	<summary>
+ PROPIEDAD: resultado de la selección de uno solo
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmFrontSyncValor.tipo">
+	<summary>
+ PROPIEDAD: tipo de valor
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmFrontSyncValor.clase">
+	<summary>
+ PROPIEDAD: Clase del objeto
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmFrontSyncValor.Selecciona_Methods(System.String)">
+	<summary>
+ Función para seleccionar los metodos que participan en un objeto
+ </summary>
+	<param name="sclase"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmFrontSyncValor.Selecciona_Objetos">
+	<summary>
+ Función para seleccionar entre los nombres de objetos
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantalla.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantalla.cdpantalla">
+	<summary>
+ PROPIEDAD: Clave de la pantalla
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantalla.SoloLectura">
+	<summary>
+ PROPIEDAD: bandera de solo lectura
+ </summary>
+	<value>Boolean</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmProyecto.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmProyecto.SoloLectura">
+	<summary>
+ PROPIEDAD: bandera de solo lectura
+ </summary>
+	<value>Boolean</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmProyecto.Consultar_Proyecto">
+	<summary>
+ Procedimiento para consulta toda la información de un proyecto
+ </summary>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPMIProyecto.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPMIProyecto.SoloLectura">
+	<summary>
+ PROPIEDAD: bandera de solo lectura
+ </summary>
+	<value>Boolean</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmPMIProyecto.Consultar_Proyecto">
+	<summary>
+ Procedimiento para consulta toda la información de un proyecto
+ </summary>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MyCATALOGOS.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MyCATALOGOS.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:MyCATALOGOS.frmaddPantallaEvento.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddPantallaEvento.cdpantalla">
+	<summary>
+ PROPIEDAD: Clave de la pantalla
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaEvento.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaEvento.cdpantalla">
+	<summary>
+ PROPIEDAD: Clave de la pantalla
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaEvento.cdevento">
+	<summary>
+ PROPIEDAD: Clave del evento
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmPantallaEvento.Valida_DatosGenerales">
+	<summary>
+ Valida los datos generales de la forma
+ </summary>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmPantallaEvento.SelectOneValor(System.String,Microsoft.VisualBasic.Collection@,Microsoft.VisualBasic.Collection@,Microsoft.VisualBasic.Collection@,Microsoft.VisualBasic.Collection@)">
+	<summary>
+ Procedimiento para seleccionar un valor en particular
+ </summary>
+	<param name="sactual"></param>
+	<param name="cclass"></param>
+	<param name="cvars"></param>
+	<param name="cobjs"></param>
+	<param name="chtml"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:MyCATALOGOS.frmQAValidainsumos">
+	<summary>
+    Clase para ejecutar el wizard de visual basic
+ </summary>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaTools.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaTools.cdpantalla">
+	<summary>
+ PROPIEDAD: Clave de la pantalla
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmStaff.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmStaff.cdstaff">
+	<summary>
+ PROPIEDAD: Clave del staff
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaCampo.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaCampo.cdpantalla">
+	<summary>
+ PROPIEDAD: Clave de la pantalla
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaCampo.cdcampo">
+	<summary>
+ PROPIEDAD: Clave del campo
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmSteackholder.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmSteackholder.cdsteackholder">
+	<summary>
+ PROPIEDAD: Clave del steackholder
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmDBEntidad.cdftedatos">
+	<summary>
+ PROPIEDAD: Clave de la fuente de datos
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmDBEntidad.nbdbentidad">
+	<summary>
+ PROPIEDAD: Nombre de la entidad de datos
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddPantallaCampo.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddPantallaCampo.cdpantalla">
+	<summary>
+ PROPIEDAD: Clave de la pantalla
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmDBEliminacion.Valida_Datos">
+	<summary>
+ Funcion para validar los insumos 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaArreglo.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaArreglo.cdpantalla">
+	<summary>
+ PROPIEDAD: Clave de la pantalla
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaArreglo.cdarreglo">
+	<summary>
+ PROPIEDAD: Clave del arreglo
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaArreglo.cdsincronia">
+	<summary>
+ PROPIEDAD: Clave de la sincronia
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaArreglo.Variables">
+	<summary>
+ PROPIEDAD: Listado de Variables
+ </summary>
+	<value></value>
+	<returns>Collection</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaArreglo.Clases">
+	<summary>
+ PROPIEDAD: Especificación de los objetos
+ </summary>
+	<value></value>
+	<returns>Collection</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaArreglo.HTMLRows">
+	<summary>
+ PROPIEDAD: Colección de renglones HTML
+ </summary>
+	<value></value>
+	<returns>Collection</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaBoton.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaBoton.cdpantalla">
+	<summary>
+ PROPIEDAD: Clave de la pantalla
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaBoton.cdboton">
+	<summary>
+ PROPIEDAD: Clave del boton
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPantallaBoton.SoloLectura">
+	<summary>
+ PROPIEDAD: bandera de solo lectura
+ </summary>
+	<value>Boolean</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmPantallaBoton.Consulta_Boton">
+	<summary>
+ Procedimiento para consulta la informaciónd e un boton
+ </summary>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmDBEntidadCampo.cdftedatos">
+	<summary>
+ PROPIEDAD: Clave de la fuente de datos
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmDBEntidadCampo.nbdbentidad">
+	<summary>
+ PROPIEDAD: Nombre de la entidad de datos
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmDBEntidadCampo.nbdbcampo">
+	<summary>
+ PROPIEDAD: Nombre del campo
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="M:MyCATALOGOS.frmDBEntidadCampo.Valida_Campos">
+	<summary>
+ Procedimiento para validar los campos que participan en la pantalla
+ </summary>
+	<returns>true/false</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddreporte.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPMIJunta.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmPMIJunta.cdjunta">
+	<summary>
+ PROPIEDAD: Clave de la junta
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddproyectofuentedato.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.MDIATLTools.configuracion">
+	<summary>
+ PROPIEDAD: nombre del archivo template
+ </summary>
+	<value>String</value>
+	<returns>valor de la propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.MDIATLTools.conexion">
+	<summary>
+ PROPIEDAD: Conexión a la base de datos
+ </summary>
+	<value>SQLiteConnection</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddentidaddb.cdftedatos">
+	<summary>
+ PROPIEDAD: Clave de la fuente de datos
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddentidaddb.SoloLectura">
+	<summary>
+ PROPIEDAD: bandera de solo lectura
+ </summary>
+	<value>Boolean</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddNavegacion.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmaddNavegacion.cddesde">
+	<summary>
+ PROPIEDAD: Clave de la pantalla desde
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporte.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporte.cdreporte">
+	<summary>
+ PROPIEDAD: Clave del reporte
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporte.SoloLectura">
+	<summary>
+ PROPIEDAD: bandera de solo lectura
+ </summary>
+	<value>Boolean</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporteCampo.cdproject">
+	<summary>
+ PROPIEDAD: Clave del proyecto
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporteCampo.cdreporte">
+	<summary>
+ PROPIEDAD: Clave del reporte
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporteCampo.cdcampo">
+	<summary>
+ PROPIEDAD: Clave del campo
+ </summary>
+	<value>String</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member><member name="P:MyCATALOGOS.frmReporteCampo.SoloLectura">
+	<summary>
+ PROPIEDAD: bandera de solo lectura
+ </summary>
+	<value>Boolean</value>
+	<returns>valor de propiedad</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

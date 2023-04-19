@@ -1,0 +1,782 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0791278-0A0A-4179-8B28-A6C405402416}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GENARO.My.MyApplication</StartupObject>
+    <RootNamespace>GENARO</RootNamespace>
+    <AssemblyName>GENARO</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GENARO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GENARO.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Common\adodb.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Scripting">
+      <HintPath>..\MyDOCUMENTOR\obj\Release\Interop.Scripting.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC\Microsoft.Office.Interop.Excel\12.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC\Microsoft.Office.Interop.Word\12.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Vbe.Interop, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC\Microsoft.Vbe.Interop\12.0.0.0__71e9bce111e9429c\Microsoft.Vbe.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="OFFICE, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC\office\12.0.0.0__71e9bce111e9429c\OFFICE.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="catalogos\db\frmDBwizLoadReference.designer.vb">
+      <DependentUpon>frmDBwizLoadReference.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBwizLoadReference.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmListprojects.designer.vb">
+      <DependentUpon>frmListprojects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmListprojects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaTools.Designer.vb">
+      <DependentUpon>frmPantallaTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPryEliminacion.Designer.vb">
+      <DependentUpon>frmPryEliminacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPryEliminacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\pmi\frmPMIAddproyecto.Designer.vb">
+      <DependentUpon>frmPMIAddproyecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\pmi\frmPMIAddproyecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddproyectofuentedato.designer.vb">
+      <DependentUpon>frmaddproyectofuentedato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddproyectofuentedato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\personas\frmListpersonas.designer.vb">
+      <DependentUpon>frmListpersonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\personas\frmListpersonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmProyecto.designer.vb">
+      <DependentUpon>frmProyecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmProyecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\pmi\frmPMIJunta.Designer.vb">
+      <DependentUpon>frmPMIJunta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\pmi\frmPMIJunta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\pmi\frmPMIProjects.designer.vb">
+      <DependentUpon>frmPMIProjects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\pmi\frmPMIProjects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\pmi\frmPMIProyecto.designer.vb">
+      <DependentUpon>frmPMIProyecto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\pmi\frmPMIProyecto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmaddfuentedatos.designer.vb">
+      <DependentUpon>frmaddfuentedatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmaddfuentedatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBEntidad.designer.vb">
+      <DependentUpon>frmDBEntidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBEntidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBEntidadCampo.designer.vb">
+      <DependentUpon>frmDBEntidadCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBEntidadCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBWizConversion.designer.vb">
+      <DependentUpon>frmDBWizConversion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBWizConversion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmFuenteDatos.designer.vb">
+      <DependentUpon>frmFuenteDatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmFuenteDatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmListEntidades.designer.vb">
+      <DependentUpon>frmListEntidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmListEntidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmListfuentedatos.designer.vb">
+      <DependentUpon>frmListfuentedatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmListfuentedatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\backend\frmgenerahibernate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\backend\frmgeneramethods.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\backend\frmgenerarusingsql.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmaddNavegacion1.designer.vb">
+      <DependentUpon>frmaddNavegacion1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmaddNavegacion1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmaddPantallaEvento1.designer.vb">
+      <DependentUpon>frmaddPantallaEvento1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmaddPantallaEvento1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmNavegacion1.designer.vb">
+      <DependentUpon>frmNavegacion1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmNavegacion1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmPantallaArreglo1.designer.vb">
+      <DependentUpon>frmPantallaArreglo1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmPantallaArreglo1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmPantallaCampo1.designer.vb">
+      <DependentUpon>frmPantallaCampo1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmPantallaCampo1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmPantallaEvento1.designer.vb">
+      <DependentUpon>frmPantallaEvento1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\catalogos1\frmPantallaEvento1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\database\frmDBwizGeneraScript.designer.vb">
+      <DependentUpon>frmDBwizGeneraScript.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\database\frmDBwizGeneraScript.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\database\frmDBwizStoreProcedures.designer.vb">
+      <DependentUpon>frmDBwizStoreProcedures.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\database\frmDBwizStoreProcedures.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\frontend\frmFronCalificaSync.designer.vb">
+      <DependentUpon>frmFronCalificaSync.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\frontend\frmFronCalificaSync.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\frontend\frmFrontSyncPantCGI.designer.vb">
+      <DependentUpon>frmFrontSyncPantCGI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\frontend\frmFrontSyncPantCGI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\frontend\frmFrontSyncValor.designer.vb">
+      <DependentUpon>frmFrontSyncValor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\frontend\frmFrontSyncValor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\frontend\frmFrontWizCGI.designer.vb">
+      <DependentUpon>frmFrontWizCGI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\frontend\frmFrontWizCGI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generador\frontend\frmFrontWizSyncProyCGI.designer.vb">
+      <DependentUpon>frmFrontWizSyncProyCGI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="generador\frontend\frmFrontWizSyncProyCGI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIGenaro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddArreglo.Designer.vb">
+      <DependentUpon>frmaddArreglo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddArreglo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddentidaddb.designer.vb">
+      <DependentUpon>frmaddentidaddb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddentidaddb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddNavegacion.Designer.vb">
+      <DependentUpon>frmaddNavegacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddNavegacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddpantalla.Designer.vb">
+      <DependentUpon>frmaddpantalla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddpantalla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddPantallaCampo.Designer.vb">
+      <DependentUpon>frmaddPantallaCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddPantallaCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddPantallaEvento.Designer.vb">
+      <DependentUpon>frmaddPantallaEvento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmaddPantallaEvento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmNavegacion.Designer.vb">
+      <DependentUpon>frmNavegacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmNavegacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantalla.designer.vb">
+      <DependentUpon>frmPantalla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantalla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaArreglo.designer.vb">
+      <DependentUpon>frmPantallaArreglo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaArreglo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaBoton.designer.vb">
+      <DependentUpon>frmPantallaBoton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaBoton.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaCampo.designer.vb">
+      <DependentUpon>frmPantallaCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaEvento.designer.vb">
+      <DependentUpon>frmPantallaEvento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\proyectos\frmPantallaEvento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\personas\frmPersona.designer.vb">
+      <DependentUpon>frmPersona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\personas\frmPersona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\personas\frmStaff.designer.vb">
+      <DependentUpon>frmStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\personas\frmStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\personas\frmSteackholder.designer.vb">
+      <DependentUpon>frmSteackholder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\personas\frmSteackholder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calidad\frmQAValidaFuente.designer.vb">
+      <DependentUpon>frmQAValidaFuente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calidad\frmQAValidaFuente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calidad\frmQAValidainsumos.designer.vb">
+      <DependentUpon>frmQAValidainsumos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="calidad\frmQAValidainsumos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\reportes\frmaddreporte.designer.vb">
+      <DependentUpon>frmaddreporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\reportes\frmaddreporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\reportes\frmReporte.designer.vb">
+      <DependentUpon>frmReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\reportes\frmReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\reportes\frmReporteArreglo.designer.vb">
+      <DependentUpon>frmReporteArreglo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\reportes\frmReporteArreglo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\reportes\frmReporteCampo.designer.vb">
+      <DependentUpon>frmReporteCampo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\reportes\frmReporteCampo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBEliminacion.designer.vb">
+      <DependentUpon>frmDBEliminacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBEliminacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBwizComments.designer.vb">
+      <DependentUpon>frmDBwizComments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBwizComments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBwizLoadScript.designer.vb">
+      <DependentUpon>frmDBwizLoadScript.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos\db\frmDBwizLoadScript.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="word\frmdfgenera.Designer.vb">
+      <DependentUpon>frmdfgenera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="word\frmdfgenera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="word\frmdiccionario.Designer.vb">
+      <DependentUpon>frmdiccionario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="word\frmdiccionario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="word\frmdtgenera.Designer.vb">
+      <DependentUpon>frmdtgenera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="word\frmdtgenera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="word\frmgeneradoc.designer.vb">
+      <DependentUpon>frmgeneradoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="word\frmgeneradoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="catalogos\db\frmDBwizLoadReference.resx">
+      <DependentUpon>frmDBwizLoadReference.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmListprojects.resx">
+      <DependentUpon>frmListprojects.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmPantallaTools.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPantallaTools.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmPryEliminacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPryEliminacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\pmi\frmPMIAddproyecto.resx">
+      <DependentUpon>frmPMIAddproyecto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmaddproyectofuentedato.resx">
+      <DependentUpon>frmaddproyectofuentedato.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\personas\frmListpersonas.resx">
+      <DependentUpon>frmListpersonas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmProyecto.resx">
+      <DependentUpon>frmProyecto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\pmi\frmPMIJunta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPMIJunta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\pmi\frmPMIProjects.resx">
+      <DependentUpon>frmPMIProjects.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\pmi\frmPMIProyecto.resx">
+      <DependentUpon>frmPMIProyecto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmaddfuentedatos.resx">
+      <DependentUpon>frmaddfuentedatos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmDBEntidad.resx">
+      <DependentUpon>frmDBEntidad.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmDBEntidadCampo.resx">
+      <DependentUpon>frmDBEntidadCampo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmDBWizConversion.resx">
+      <DependentUpon>frmDBWizConversion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmFuenteDatos.resx">
+      <DependentUpon>frmFuenteDatos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmListEntidades.resx">
+      <DependentUpon>frmListEntidades.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmListfuentedatos.resx">
+      <DependentUpon>frmListfuentedatos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\backend\frmgenerahibernate.resx">
+      <DependentUpon>frmgenerahibernate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\backend\frmgeneramethods.resx">
+      <DependentUpon>frmgeneramethods.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\backend\frmgenerarusingsql.resx">
+      <DependentUpon>frmgenerarusingsql.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\catalogos1\frmaddNavegacion1.resx">
+      <DependentUpon>frmaddNavegacion1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\catalogos1\frmaddPantallaEvento1.resx">
+      <DependentUpon>frmaddPantallaEvento1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\catalogos1\frmNavegacion1.resx">
+      <DependentUpon>frmNavegacion1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\catalogos1\frmPantallaArreglo1.resx">
+      <DependentUpon>frmPantallaArreglo1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\catalogos1\frmPantallaCampo1.resx">
+      <DependentUpon>frmPantallaCampo1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\catalogos1\frmPantallaEvento1.resx">
+      <DependentUpon>frmPantallaEvento1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\database\frmDBwizGeneraScript.resx">
+      <DependentUpon>frmDBwizGeneraScript.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\database\frmDBwizStoreProcedures.resx">
+      <DependentUpon>frmDBwizStoreProcedures.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\frontend\frmFronCalificaSync.resx">
+      <DependentUpon>frmFronCalificaSync.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\frontend\frmFrontSyncPantCGI.resx">
+      <DependentUpon>frmFrontSyncPantCGI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\frontend\frmFrontSyncValor.resx">
+      <DependentUpon>frmFrontSyncValor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\frontend\frmFrontWizCGI.resx">
+      <DependentUpon>frmFrontWizCGI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="generador\frontend\frmFrontWizSyncProyCGI.resx">
+      <DependentUpon>frmFrontWizSyncProyCGI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIGenaro.resx">
+      <DependentUpon>MDIGenaro.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmaddArreglo.resx">
+      <DependentUpon>frmaddArreglo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmaddentidaddb.resx">
+      <DependentUpon>frmaddentidaddb.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmaddNavegacion.resx">
+      <DependentUpon>frmaddNavegacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmaddpantalla.resx">
+      <DependentUpon>frmaddpantalla.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmaddPantallaCampo.resx">
+      <DependentUpon>frmaddPantallaCampo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmaddPantallaEvento.resx">
+      <DependentUpon>frmaddPantallaEvento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmNavegacion.resx">
+      <DependentUpon>frmNavegacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmPantalla.resx">
+      <DependentUpon>frmPantalla.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmPantallaArreglo.resx">
+      <DependentUpon>frmPantallaArreglo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmPantallaBoton.resx">
+      <DependentUpon>frmPantallaBoton.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmPantallaCampo.resx">
+      <DependentUpon>frmPantallaCampo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\proyectos\frmPantallaEvento.resx">
+      <DependentUpon>frmPantallaEvento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\personas\frmPersona.resx">
+      <DependentUpon>frmPersona.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\personas\frmStaff.resx">
+      <DependentUpon>frmStaff.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\personas\frmSteackholder.resx">
+      <DependentUpon>frmSteackholder.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calidad\frmQAValidaFuente.resx">
+      <DependentUpon>frmQAValidaFuente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calidad\frmQAValidainsumos.resx">
+      <DependentUpon>frmQAValidainsumos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\reportes\frmaddreporte.resx">
+      <DependentUpon>frmaddreporte.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\reportes\frmReporte.resx">
+      <DependentUpon>frmReporte.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\reportes\frmReporteArreglo.resx">
+      <DependentUpon>frmReporteArreglo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\reportes\frmReporteCampo.resx">
+      <DependentUpon>frmReporteCampo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmDBEliminacion.resx">
+      <DependentUpon>frmDBEliminacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmDBwizComments.resx">
+      <DependentUpon>frmDBwizComments.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos\db\frmDBwizLoadScript.resx">
+      <DependentUpon>frmDBwizLoadScript.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="word\frmdfgenera.resx">
+      <DependentUpon>frmdfgenera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="word\frmdiccionario.resx">
+      <DependentUpon>frmdiccionario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="word\frmdtgenera.resx">
+      <DependentUpon>frmdtgenera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="word\frmgeneradoc.resx">
+      <DependentUpon>frmgeneradoc.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyLIB\MyLIB.vbproj">
+      <Project>{77BC217D-46CB-473D-BAFA-6B77567E4BBC}</Project>
+      <Name>MyLIB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

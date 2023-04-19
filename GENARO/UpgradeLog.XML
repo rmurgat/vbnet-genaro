@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MyCATALOGOS">
+</Property><Property Name="Archivo de la solución" Value="C:\Users\RUBEN\Documents\Visual Studio 2008\Projects\MySUIT64\MyCATALOGOS\MyCATALOGOS.sln">
+</Property><Property Name="Date" Value="viernes, 07 de mayo de 2010">
+</Property><Property Name="Time" Value="10:42 a.m.">
+</Property></Properties><Event ErrorLevel="0" Project="MyCATALOGOS" Source="MyCATALOGOS.vbproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="MyCATALOGOS" Source="MyCATALOGOS.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MyLIB" Source="..\MyLIB\MyLIB.vbproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="MyLIB" Source="..\MyLIB\MyLIB.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MyCATALOGOS.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="MyCATALOGOS.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MyCATALOGOS" Source="MyCATALOGOS.vbproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event><Event ErrorLevel="0" Project="MyLIB" Source="..\MyLIB\MyLIB.vbproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event></UpgradeLog>
