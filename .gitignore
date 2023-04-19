@@ -1,2 +1,6 @@
 *.dll
 *.exe
+bin/Debug/*.*
+/obj
+_UpgradeReport_Files
+
