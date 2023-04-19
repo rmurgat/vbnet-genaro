@@ -1,0 +1,2 @@
+# vbnet-genaro
+code generator
